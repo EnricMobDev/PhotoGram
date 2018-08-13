@@ -8,21 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0C47E5E12121FC87003E1E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E5E02121FC87003E1E41 /* AppDelegate.swift */; };
-		0C47E5E32121FC87003E1E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E5E22121FC87003E1E41 /* ViewController.swift */; };
+		0C47E5E32121FC87003E1E41 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E5E22121FC87003E1E41 /* LogInViewController.swift */; };
 		0C47E5E62121FC87003E1E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5E42121FC87003E1E41 /* Main.storyboard */; };
 		0C47E5E82121FC88003E1E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5E72121FC88003E1E41 /* Assets.xcassets */; };
 		0C47E5EB2121FC88003E1E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5E92121FC88003E1E41 /* LaunchScreen.storyboard */; };
+		0C47E5F621220CA7003E1E41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5F521220CA7003E1E41 /* GoogleService-Info.plist */; };
 		DECEC8E8B4905EC8B775932E /* Pods_PhotoGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D933D888918457A50ACF965 /* Pods_PhotoGram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C47E5DD2121FC87003E1E41 /* PhotoGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C47E5E02121FC87003E1E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C47E5E22121FC87003E1E41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C47E5E22121FC87003E1E41 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		0C47E5E52121FC87003E1E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C47E5E72121FC88003E1E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C47E5EA2121FC88003E1E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C47E5EC2121FC88003E1E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C47E5F421220B30003E1E41 /* PhotoGram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoGram.entitlements; sourceTree = "<group>"; };
+		0C47E5F521220CA7003E1E41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1803E87CFEB98C9806196B63 /* Pods-PhotoGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoGram/Pods-PhotoGram.release.xcconfig"; sourceTree = "<group>"; };
 		1D933D888918457A50ACF965 /* Pods_PhotoGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6BEDC49DCD9DF7E8A565AC /* Pods-PhotoGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoGram/Pods-PhotoGram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,12 +64,14 @@
 		0C47E5DF2121FC87003E1E41 /* PhotoGram */ = {
 			isa = PBXGroup;
 			children = (
+				0C47E5F421220B30003E1E41 /* PhotoGram.entitlements */,
 				0C47E5E02121FC87003E1E41 /* AppDelegate.swift */,
-				0C47E5E22121FC87003E1E41 /* ViewController.swift */,
+				0C47E5E22121FC87003E1E41 /* LogInViewController.swift */,
 				0C47E5E42121FC87003E1E41 /* Main.storyboard */,
 				0C47E5E72121FC88003E1E41 /* Assets.xcassets */,
 				0C47E5E92121FC88003E1E41 /* LaunchScreen.storyboard */,
 				0C47E5EC2121FC88003E1E41 /* Info.plist */,
+				0C47E5F521220CA7003E1E41 /* GoogleService-Info.plist */,
 			);
 			path = PhotoGram;
 			sourceTree = "<group>";
@@ -123,6 +128,11 @@
 				TargetAttributes = {
 					0C47E5DC2121FC87003E1E41 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -149,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C47E5F621220CA7003E1E41 /* GoogleService-Info.plist in Resources */,
 				0C47E5EB2121FC88003E1E41 /* LaunchScreen.storyboard in Resources */,
 				0C47E5E82121FC88003E1E41 /* Assets.xcassets in Resources */,
 				0C47E5E62121FC87003E1E41 /* Main.storyboard in Resources */,
@@ -229,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C47E5E32121FC87003E1E41 /* ViewController.swift in Sources */,
+				0C47E5E32121FC87003E1E41 /* LogInViewController.swift in Sources */,
 				0C47E5E12121FC87003E1E41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,10 +386,14 @@
 			baseConfigurationReference = 7D6BEDC49DCD9DF7E8A565AC /* Pods-PhotoGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoGram/PhotoGram.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU4SSYH2B5;
 				INFOPLIST_FILE = PhotoGram/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.PhotoGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -391,10 +406,14 @@
 			baseConfigurationReference = 1803E87CFEB98C9806196B63 /* Pods-PhotoGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoGram/PhotoGram.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU4SSYH2B5;
 				INFOPLIST_FILE = PhotoGram/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.PhotoGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
