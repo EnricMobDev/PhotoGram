@@ -6,8 +6,4 @@
 //  Copyright © 2018 Enric Pou Villanueva. All rights reserved.
 //
 
-#ifndef PhotoGram_Bridging_header_h
-#define PhotoGram_Bridging_header_h
-
-
-#endif /* PhotoGram_Bridging_header_h */
+#import "SWRevealViewController.h"
