@@ -132,11 +132,27 @@
                         <outlet property="loginEmailField" destination="HKh-Ne-eHv" id="Wnu-ok-hvy"/>
                         <outlet property="loginPasswordField" destination="VzJ-w9-yJA" id="31v-4E-0vd"/>
                         <outlet property="signInButton" destination="D4T-Dn-twH" id="qOi-hg-1nA"/>
+                        <segue destination="Iom-nx-bVC" kind="presentation" identifier="showWelcomeView" id="hjp-wd-WXK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-290.39999999999998" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dMB-k2-Zcx">
+            <objects>
+                <viewController id="Iom-nx-bVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="589-8W-mLY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EVk-Qm-GIH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrC-lm-OX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="124"/>
         </scene>
     </scenes>
     <resources>
