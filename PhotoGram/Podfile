@@ -1,0 +1,12 @@
+ platform :ios, '9.0'
+ use_frameworks!
+
+
+target 'PhotoGram' do
+
+	pod 'Firebase/Core'
+    	pod 'Firebase/Auth'
+	pod 'lottie-ios'
+	pod 'GoogleSignIn'
+
+end
