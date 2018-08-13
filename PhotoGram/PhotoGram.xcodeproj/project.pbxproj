@@ -15,6 +15,7 @@
 		0C47E5F621220CA7003E1E41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5F521220CA7003E1E41 /* GoogleService-Info.plist */; };
 		0C47E5FD2122174F003E1E41 /* code_invite_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5FB2122174E003E1E41 /* code_invite_success.json */; };
 		0C47E5FE2122174F003E1E41 /* CorrectPasswordAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E5FC2122174F003E1E41 /* CorrectPasswordAnimation.swift */; };
+		0C47E602212220D8003E1E41 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E601212220D8003E1E41 /* SWRevealViewController.m */; };
 		DECEC8E8B4905EC8B775932E /* Pods_PhotoGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D933D888918457A50ACF965 /* Pods_PhotoGram.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,9 @@
 		0C47E5F521220CA7003E1E41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C47E5FB2122174E003E1E41 /* code_invite_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = code_invite_success.json; sourceTree = "<group>"; };
 		0C47E5FC2122174F003E1E41 /* CorrectPasswordAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectPasswordAnimation.swift; sourceTree = "<group>"; };
+		0C47E600212220D8003E1E41 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0C47E601212220D8003E1E41 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0C47E60321222140003E1E41 /* PhotoGram-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PhotoGram-Bridging-header.h"; path = "PhotoGram/PhotoGram-Bridging-header.h"; sourceTree = SOURCE_ROOT; };
 		1803E87CFEB98C9806196B63 /* Pods-PhotoGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoGram/Pods-PhotoGram.release.xcconfig"; sourceTree = "<group>"; };
 		1D933D888918457A50ACF965 /* Pods_PhotoGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6BEDC49DCD9DF7E8A565AC /* Pods-PhotoGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoGram/Pods-PhotoGram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +74,9 @@
 			children = (
 				0C47E5F421220B30003E1E41 /* PhotoGram.entitlements */,
 				0C47E5E02121FC87003E1E41 /* AppDelegate.swift */,
+				0C47E60321222140003E1E41 /* PhotoGram-Bridging-header.h */,
 				0C47E5FA21221734003E1E41 /* Animations */,
+				0C47E5FF212220D8003E1E41 /* SWRevealViewController */,
 				0C47E5F72122167D003E1E41 /* Controllers */,
 				0C47E5E72121FC88003E1E41 /* Assets.xcassets */,
 				0C47E5E92121FC88003E1E41 /* LaunchScreen.storyboard */,
@@ -96,6 +102,15 @@
 				0C47E5FC2122174F003E1E41 /* CorrectPasswordAnimation.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		0C47E5FF212220D8003E1E41 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0C47E600212220D8003E1E41 /* SWRevealViewController.h */,
+				0C47E601212220D8003E1E41 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		3002BDF5FBFEF5509015C1F9 /* Frameworks */ = {
@@ -266,6 +281,7 @@
 				0C47E5E32121FC87003E1E41 /* LogInViewController.swift in Sources */,
 				0C47E5E12121FC87003E1E41 /* AppDelegate.swift in Sources */,
 				0C47E5FE2122174F003E1E41 /* CorrectPasswordAnimation.swift in Sources */,
+				0C47E602212220D8003E1E41 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
