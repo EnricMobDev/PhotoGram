@@ -16,6 +16,8 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     // MARK: - Constants
     let FIRST_FIELD = 0
     let SECOND_FIELD = 1
+    let WELCOME_VIEW_SEGUE = "showWelcomeView"
+    let SECONDS_TO_WAIT_ANIMATION = 4
     
     // MARK: - IBOutlets
     @IBOutlet weak var loginEmailField: UITextField!
@@ -94,7 +96,8 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
                     
                     if error == nil {
                         
-                        
+                        self.addLoginAnimation()
+
                     } else {
                         
                         if let localizedError = error?.localizedDescription {
@@ -141,6 +144,24 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         view.endEditing(true)
     }
     
+    // MARK: - LoginAnimation
+    public func addLoginAnimation() {
+        
+        let loginView = CorrectPasswordAnimation().showCorrectLoginAnimation()
+        
+        view.addSubview(loginView)
+        
+        goToWelcomeView()
+    }
+    
+    private func goToWelcomeView() {
+        
+        DispatchQueue.main.asyncAfter(wallDeadline: .now() + .seconds(self.SECONDS_TO_WAIT_ANIMATION), execute: {
+            
+            self.performSegue(withIdentifier: self.WELCOME_VIEW_SEGUE, sender: self)
+        })
+    }
+    
     // MARK: - GoogleSignIn
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         
@@ -165,6 +186,7 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
                 return
             }
             
+            self.addLoginAnimation()
         })
     }
     
