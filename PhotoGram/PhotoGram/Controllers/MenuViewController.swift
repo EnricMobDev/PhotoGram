@@ -13,8 +13,10 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     //MARK: - Constants
     let createCells: [DrawerItemProtocol] = [
         
-        OptionsMenu(image: UIImage(named: "profile_image_male") ?? UIImage(), title: "Logout"),
-        OptionsMenu(image: UIImage(named: "logout") ?? UIImage(), title: "Logout")
+        OptionsMenu(image: UIImage(named: "profile_image_male") ?? UIImage(), title: "Profile"),
+        OptionsMenu(image: UIImage(named: "ic_alerts") ?? UIImage(), title: "Notifications"),
+        OptionsMenu(image: UIImage(named: "settings") ?? UIImage(), title: "Settings"),
+        OptionsMenu(image: UIImage(named: "ic_apagar_black") ?? UIImage(), title: "Logout")
     ]
     
     // MARK: - Override methods
