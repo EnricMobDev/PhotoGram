@@ -11,5 +11,6 @@ import Foundation
 internal struct OptionsMenu {
     
     var image: UIImage?
-    var title: String    
+    var title: String
+    var typeOfMenu: TypeOfMenu
 }
