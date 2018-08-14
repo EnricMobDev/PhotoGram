@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+internal protocol DrawerItemProtocol {
+    
+    var cellDrawer: CellDrawerProtocol { get }
+}

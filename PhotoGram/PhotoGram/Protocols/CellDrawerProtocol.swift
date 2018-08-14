@@ -6,4 +6,11 @@
 //  Copyright © 2018 Enric Pou Villanueva. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+internal protocol CellDrawerProtocol {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    
+    func drawCell(_ cell: UITableViewCell, withItem item: Any)
+}
