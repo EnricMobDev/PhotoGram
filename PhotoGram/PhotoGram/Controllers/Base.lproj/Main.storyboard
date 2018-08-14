@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -139,16 +140,82 @@
             </objects>
             <point key="canvasLocation" x="-290.39999999999998" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
+        <scene sceneID="3nv-qa-Zpa">
+            <objects>
+                <viewController id="jqk-iz-ZXa" customClass="MenuViewController" customModule="PhotoGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W1Y-jk-Wex">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Aa8-mb-0SU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="90" id="KeG-hn-M35" customClass="MenuTableViewCell" customModule="PhotoGram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KeG-hn-M35" id="HeD-cx-ILz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image_female" translatesAutoresizingMaskIntoConstraints="NO" id="11E-YL-iXm">
+                                                    <rect key="frame" x="15" y="18" width="54" height="54"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="54" id="ah5-2j-J4r"/>
+                                                        <constraint firstAttribute="width" constant="54" id="p8n-zV-I5G"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagen de Perfil" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPw-Yh-fs4">
+                                                    <rect key="frame" x="99" y="35" width="241" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UPw-Yh-fs4" firstAttribute="leading" secondItem="11E-YL-iXm" secondAttribute="trailing" constant="30" id="AC4-PE-ql1"/>
+                                                <constraint firstItem="11E-YL-iXm" firstAttribute="leading" secondItem="HeD-cx-ILz" secondAttribute="leadingMargin" id="EPP-9h-kgU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UPw-Yh-fs4" secondAttribute="trailing" constant="20" id="TYr-ur-wgd"/>
+                                                <constraint firstItem="UPw-Yh-fs4" firstAttribute="centerY" secondItem="HeD-cx-ILz" secondAttribute="centerY" id="Ueg-t1-O8A"/>
+                                                <constraint firstItem="11E-YL-iXm" firstAttribute="centerY" secondItem="HeD-cx-ILz" secondAttribute="centerY" id="aP5-px-M8I"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="menuImage" destination="11E-YL-iXm" id="0Ji-MZ-lNl"/>
+                                            <outlet property="menuTitle" destination="UPw-Yh-fs4" id="v8L-Lk-R5D"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ryt-g3-ExH" firstAttribute="bottom" secondItem="Aa8-mb-0SU" secondAttribute="bottom" id="Y8R-1M-7dp"/>
+                            <constraint firstItem="Aa8-mb-0SU" firstAttribute="leading" secondItem="Ryt-g3-ExH" secondAttribute="leading" id="Zy3-c2-opY"/>
+                            <constraint firstItem="Aa8-mb-0SU" firstAttribute="top" secondItem="Ryt-g3-ExH" secondAttribute="top" id="bG7-r3-iF1"/>
+                            <constraint firstItem="Ryt-g3-ExH" firstAttribute="trailing" secondItem="Aa8-mb-0SU" secondAttribute="trailing" id="hHe-Dr-3BD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ryt-g3-ExH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOS-JM-0w5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584.79999999999995" y="-597.75112443778119"/>
+        </scene>
+        <!--Reveal View Controller-->
         <scene sceneID="dMB-k2-Zcx">
             <objects>
-                <viewController id="Iom-nx-bVC" sceneMemberID="viewController">
+                <viewController id="Iom-nx-bVC" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="589-8W-mLY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.56174045138888884" green="0.683837890625" blue="0.86732313368055558" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="EVk-Qm-GIH"/>
                     </view>
+                    <connections>
+                        <segue destination="jqk-iz-ZXa" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="IIa-k5-hpb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrC-lm-OX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,5 +224,6 @@
     </scenes>
     <resources>
         <image name="landscape" width="375" height="667"/>
+        <image name="profile_image_female" width="32" height="32"/>
     </resources>
 </document>
