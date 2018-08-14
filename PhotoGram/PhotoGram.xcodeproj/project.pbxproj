@@ -14,6 +14,7 @@
 		0C2150782123515A00DC5C5B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2150772123515A00DC5C5B /* MenuTableViewCell.swift */; };
 		0C21507A2123522700DC5C5B /* MenuCellDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2150792123522700DC5C5B /* MenuCellDrawer.swift */; };
 		0C21507D212357DE00DC5C5B /* CommonComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21507C212357DE00DC5C5B /* CommonComponents.swift */; };
+		0C21507F21235EF600DC5C5B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21507E21235EF600DC5C5B /* FeedViewController.swift */; };
 		0C47E5E12121FC87003E1E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E5E02121FC87003E1E41 /* AppDelegate.swift */; };
 		0C47E5E32121FC87003E1E41 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E5E22121FC87003E1E41 /* LogInViewController.swift */; };
 		0C47E5E62121FC87003E1E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5E42121FC87003E1E41 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		0C2150772123515A00DC5C5B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		0C2150792123522700DC5C5B /* MenuCellDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellDrawer.swift; sourceTree = "<group>"; };
 		0C21507C212357DE00DC5C5B /* CommonComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonComponents.swift; sourceTree = "<group>"; };
+		0C21507E21235EF600DC5C5B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0C47E5DD2121FC87003E1E41 /* PhotoGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C47E5E02121FC87003E1E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C47E5E22121FC87003E1E41 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				0C47E5E42121FC87003E1E41 /* Main.storyboard */,
 				0C47E5E22121FC87003E1E41 /* LogInViewController.swift */,
 				0C21506B21234CFD00DC5C5B /* MenuViewController.swift */,
+				0C21507E21235EF600DC5C5B /* FeedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				0C21507121234FA800DC5C5B /* DrawerItemProtocol.swift in Sources */,
 				0C21507A2123522700DC5C5B /* MenuCellDrawer.swift in Sources */,
 				0C47E5FE2122174F003E1E41 /* CorrectPasswordAnimation.swift in Sources */,
+				0C21507F21235EF600DC5C5B /* FeedViewController.swift in Sources */,
 				0C47E602212220D8003E1E41 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
