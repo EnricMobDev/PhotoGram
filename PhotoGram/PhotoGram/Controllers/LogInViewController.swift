@@ -39,7 +39,6 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         addGestureRecognizer()
         signInButton.style = .wide
     }
-
     
     // MARK: - IBActions
     @IBAction func signUpTapped(_ sender: Any) {
@@ -150,15 +149,17 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         let loginView = CorrectPasswordAnimation().showCorrectLoginAnimation()
         
         view.addSubview(loginView)
-        
-        goToWelcomeView()
+        goToWelcomeView(animationView: loginView)
     }
+
     
-    private func goToWelcomeView() {
+    private func goToWelcomeView(animationView: UIView) {
         
         DispatchQueue.main.asyncAfter(wallDeadline: .now() + .seconds(self.SECONDS_TO_WAIT_ANIMATION), execute: {
             
             self.performSegue(withIdentifier: self.WELCOME_VIEW_SEGUE, sender: self)
+            
+            animationView.removeFromSuperview()
         })
     }
     
