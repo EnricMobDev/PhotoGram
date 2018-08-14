@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C21506C21234CFD00DC5C5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21506B21234CFD00DC5C5B /* MenuViewController.swift */; };
+		0C21507121234FA800DC5C5B /* DrawerItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21507021234FA800DC5C5B /* DrawerItemProtocol.swift */; };
+		0C21507321234FC900DC5C5B /* CellDrawerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21507221234FC900DC5C5B /* CellDrawerProtocol.swift */; };
+		0C2150752123508F00DC5C5B /* OptionsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2150742123508F00DC5C5B /* OptionsMenu.swift */; };
+		0C2150782123515A00DC5C5B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2150772123515A00DC5C5B /* MenuTableViewCell.swift */; };
+		0C21507A2123522700DC5C5B /* MenuCellDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2150792123522700DC5C5B /* MenuCellDrawer.swift */; };
+		0C21507D212357DE00DC5C5B /* CommonComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C21507C212357DE00DC5C5B /* CommonComponents.swift */; };
 		0C47E5E12121FC87003E1E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E5E02121FC87003E1E41 /* AppDelegate.swift */; };
 		0C47E5E32121FC87003E1E41 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E5E22121FC87003E1E41 /* LogInViewController.swift */; };
 		0C47E5E62121FC87003E1E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5E42121FC87003E1E41 /* Main.storyboard */; };
@@ -15,10 +22,18 @@
 		0C47E5F621220CA7003E1E41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5F521220CA7003E1E41 /* GoogleService-Info.plist */; };
 		0C47E5FD2122174F003E1E41 /* code_invite_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C47E5FB2122174E003E1E41 /* code_invite_success.json */; };
 		0C47E5FE2122174F003E1E41 /* CorrectPasswordAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E5FC2122174F003E1E41 /* CorrectPasswordAnimation.swift */; };
+		0C47E602212220D8003E1E41 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C47E601212220D8003E1E41 /* SWRevealViewController.m */; };
 		DECEC8E8B4905EC8B775932E /* Pods_PhotoGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D933D888918457A50ACF965 /* Pods_PhotoGram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C21506B21234CFD00DC5C5B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0C21507021234FA800DC5C5B /* DrawerItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerItemProtocol.swift; sourceTree = "<group>"; };
+		0C21507221234FC900DC5C5B /* CellDrawerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDrawerProtocol.swift; sourceTree = "<group>"; };
+		0C2150742123508F00DC5C5B /* OptionsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsMenu.swift; sourceTree = "<group>"; };
+		0C2150772123515A00DC5C5B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		0C2150792123522700DC5C5B /* MenuCellDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellDrawer.swift; sourceTree = "<group>"; };
+		0C21507C212357DE00DC5C5B /* CommonComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonComponents.swift; sourceTree = "<group>"; };
 		0C47E5DD2121FC87003E1E41 /* PhotoGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C47E5E02121FC87003E1E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C47E5E22121FC87003E1E41 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +45,9 @@
 		0C47E5F521220CA7003E1E41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C47E5FB2122174E003E1E41 /* code_invite_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = code_invite_success.json; sourceTree = "<group>"; };
 		0C47E5FC2122174F003E1E41 /* CorrectPasswordAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectPasswordAnimation.swift; sourceTree = "<group>"; };
+		0C47E600212220D8003E1E41 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0C47E601212220D8003E1E41 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0C47E60321222140003E1E41 /* PhotoGram-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PhotoGram-Bridging-header.h"; path = "PhotoGram/PhotoGram-Bridging-header.h"; sourceTree = SOURCE_ROOT; };
 		1803E87CFEB98C9806196B63 /* Pods-PhotoGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoGram/Pods-PhotoGram.release.xcconfig"; sourceTree = "<group>"; };
 		1D933D888918457A50ACF965 /* Pods_PhotoGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6BEDC49DCD9DF7E8A565AC /* Pods-PhotoGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoGram/Pods-PhotoGram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +65,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C21506D21234EED00DC5C5B /* Drawers */ = {
+			isa = PBXGroup;
+			children = (
+				0C2150792123522700DC5C5B /* MenuCellDrawer.swift */,
+			);
+			path = Drawers;
+			sourceTree = "<group>";
+		};
+		0C21506E21234F0400DC5C5B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0C21507221234FC900DC5C5B /* CellDrawerProtocol.swift */,
+				0C21507021234FA800DC5C5B /* DrawerItemProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0C21506F21234F1100DC5C5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C2150742123508F00DC5C5B /* OptionsMenu.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C2150762123513800DC5C5B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0C2150772123515A00DC5C5B /* MenuTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0C21507B212357BD00DC5C5B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0C21507C212357DE00DC5C5B /* CommonComponents.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		0C47E5D42121FC87003E1E41 = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +127,16 @@
 		0C47E5DF2121FC87003E1E41 /* PhotoGram */ = {
 			isa = PBXGroup;
 			children = (
+				0C21507B212357BD00DC5C5B /* Utils */,
 				0C47E5F421220B30003E1E41 /* PhotoGram.entitlements */,
 				0C47E5E02121FC87003E1E41 /* AppDelegate.swift */,
+				0C47E60321222140003E1E41 /* PhotoGram-Bridging-header.h */,
 				0C47E5FA21221734003E1E41 /* Animations */,
+				0C47E5FF212220D8003E1E41 /* SWRevealViewController */,
+				0C21506D21234EED00DC5C5B /* Drawers */,
+				0C21506E21234F0400DC5C5B /* Protocols */,
 				0C47E5F72122167D003E1E41 /* Controllers */,
+				0C21506F21234F1100DC5C5B /* Models */,
 				0C47E5E72121FC88003E1E41 /* Assets.xcassets */,
 				0C47E5E92121FC88003E1E41 /* LaunchScreen.storyboard */,
 				0C47E5EC2121FC88003E1E41 /* Info.plist */,
@@ -83,8 +148,10 @@
 		0C47E5F72122167D003E1E41 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0C2150762123513800DC5C5B /* Cells */,
 				0C47E5E42121FC87003E1E41 /* Main.storyboard */,
 				0C47E5E22121FC87003E1E41 /* LogInViewController.swift */,
+				0C21506B21234CFD00DC5C5B /* MenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,6 +163,15 @@
 				0C47E5FC2122174F003E1E41 /* CorrectPasswordAnimation.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		0C47E5FF212220D8003E1E41 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0C47E600212220D8003E1E41 /* SWRevealViewController.h */,
+				0C47E601212220D8003E1E41 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		3002BDF5FBFEF5509015C1F9 /* Frameworks */ = {
@@ -263,9 +339,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C21507D212357DE00DC5C5B /* CommonComponents.swift in Sources */,
 				0C47E5E32121FC87003E1E41 /* LogInViewController.swift in Sources */,
+				0C21506C21234CFD00DC5C5B /* MenuViewController.swift in Sources */,
+				0C2150752123508F00DC5C5B /* OptionsMenu.swift in Sources */,
 				0C47E5E12121FC87003E1E41 /* AppDelegate.swift in Sources */,
+				0C21507321234FC900DC5C5B /* CellDrawerProtocol.swift in Sources */,
+				0C2150782123515A00DC5C5B /* MenuTableViewCell.swift in Sources */,
+				0C21507121234FA800DC5C5B /* DrawerItemProtocol.swift in Sources */,
+				0C21507A2123522700DC5C5B /* MenuCellDrawer.swift in Sources */,
 				0C47E5FE2122174F003E1E41 /* CorrectPasswordAnimation.swift in Sources */,
+				0C47E602212220D8003E1E41 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +504,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.PhotoGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotoGram/PhotoGram-Bridging-header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,6 +525,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.PhotoGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotoGram/PhotoGram-Bridging-header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
