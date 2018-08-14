@@ -16,17 +16,21 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.524936420243-cuufpkrfv0d6umefvru5vp0qqs1ahbh6</string>
-			</array>
-		</dict>
-	</array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.524936420243-cuufpkrfv0d6umefvru5vp0qqs1ahbh6</string>
+                <string>twitterkit-RheLmeQ1nzOmPlv0jlw0IdFwo</string>
+                </array>
+            </dict>
+        </array>
+        <key>LSApplicationQueriesSchemes</key>
+        <array>
+            <string>twitter</string>
+            <string>twitterauth</string>
+    </array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>

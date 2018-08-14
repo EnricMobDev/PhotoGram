@@ -28,7 +28,7 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-Dn-twH" customClass="GIDSignInButton">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-Dn-twH" customClass="GIDSignInButton">
                                 <rect key="frame" x="92" y="575" width="191" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="0.58144263699999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -45,8 +45,8 @@
                                     <action selector="recoverPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a9F-1z-D19"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uTB-7M-LbA">
-                                <rect key="frame" x="67" y="201" width="240" height="246"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTB-7M-LbA">
+                                <rect key="frame" x="67" y="201" width="240" height="250"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VzJ-w9-yJA">
                                         <rect key="frame" x="20" y="116" width="200" height="30"/>
@@ -104,13 +104,25 @@
                                     <constraint firstItem="ilb-M9-dA8" firstAttribute="leading" secondItem="uTB-7M-LbA" secondAttribute="leading" constant="18" id="svp-1P-3Ms"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tH-Eh-u9F" customClass="TWTRLogInButton">
+                                <rect key="frame" x="92" y="521" width="191" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="9LX-Of-wb6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="twitterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pm9-Bt-4V0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aPP-lh-t35" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="67h-RM-mG6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g2S-Mi-LSR" secondAttribute="bottom" constant="20" id="9Km-VY-OZ2"/>
+                            <constraint firstItem="9tH-Eh-u9F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CXV-lx-r5j"/>
                             <constraint firstItem="aPP-lh-t35" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EPC-jD-C78"/>
                             <constraint firstItem="uTB-7M-LbA" firstAttribute="top" secondItem="aPP-lh-t35" secondAttribute="bottom" constant="45" id="EfX-gn-Yf2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9tH-Eh-u9F" secondAttribute="trailing" constant="92" id="G76-9q-RXa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uTB-7M-LbA" secondAttribute="trailing" constant="68" id="KsL-b5-efc"/>
                             <constraint firstItem="g2S-Mi-LSR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="MAq-ch-zRP"/>
                             <constraint firstItem="D4T-Dn-twH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MfV-MC-8A9"/>
@@ -118,13 +130,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D4T-Dn-twH" secondAttribute="trailing" constant="92" id="Ufd-fq-uxi"/>
                             <constraint firstItem="Ic1-lB-8eC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YoC-y8-vHr"/>
                             <constraint firstItem="D4T-Dn-twH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="aQC-dW-M7L"/>
-                            <constraint firstItem="D4T-Dn-twH" firstAttribute="top" secondItem="uTB-7M-LbA" secondAttribute="bottom" constant="128" id="aeC-K0-cKQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ic1-lB-8eC" secondAttribute="bottom" id="bDj-aP-PUV"/>
+                            <constraint firstItem="D4T-Dn-twH" firstAttribute="top" secondItem="9tH-Eh-u9F" secondAttribute="bottom" constant="20" id="bV8-yP-7xC"/>
                             <constraint firstItem="aPP-lh-t35" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gF3-mv-hia"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g2S-Mi-LSR" secondAttribute="trailing" constant="102" id="iSE-Y0-yyN"/>
+                            <constraint firstItem="9tH-Eh-u9F" firstAttribute="top" secondItem="uTB-7M-LbA" secondAttribute="bottom" constant="70" id="iUA-3d-8MT"/>
                             <constraint firstItem="g2S-Mi-LSR" firstAttribute="top" secondItem="D4T-Dn-twH" secondAttribute="bottom" constant="10" id="itY-4Z-2Eg"/>
+                            <constraint firstItem="D4T-Dn-twH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="575" id="pU1-SB-Hqj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ic1-lB-8eC" secondAttribute="trailing" id="uQN-LZ-aZh"/>
                             <constraint firstItem="uTB-7M-LbA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="wqI-AJ-TmR"/>
+                            <constraint firstItem="9tH-Eh-u9F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="wsz-op-SzU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aPP-lh-t35" secondAttribute="trailing" constant="20" id="xNK-P9-O0G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -133,6 +148,7 @@
                         <outlet property="loginEmailField" destination="HKh-Ne-eHv" id="Wnu-ok-hvy"/>
                         <outlet property="loginPasswordField" destination="VzJ-w9-yJA" id="31v-4E-0vd"/>
                         <outlet property="signInButton" destination="D4T-Dn-twH" id="qOi-hg-1nA"/>
+                        <outlet property="twitterButton" destination="9tH-Eh-u9F" id="FRu-9i-m8t"/>
                         <segue destination="Iom-nx-bVC" kind="presentation" identifier="showWelcomeView" id="hjp-wd-WXK"/>
                     </connections>
                 </viewController>
