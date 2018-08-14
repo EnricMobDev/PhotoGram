@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct CellComponents {
+    
+    static let estimatedRowHeigth: CGFloat = 80
+
+}
