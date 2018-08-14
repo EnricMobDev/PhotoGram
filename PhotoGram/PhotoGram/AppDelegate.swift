@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        TWTRTwitter.sharedInstance().start(withConsumerKey: "RheLmeQ1nzOmPlv0jlw0IdFwo", consumerSecret: "VNuhgf8epnAIv7axx90HpbBVoXFc7o44aHT5okVhc7ATkBZgvg")
         FirebaseApp.configure()
         return true
     }
@@ -25,12 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     @available(iOS 9.0, *)
     func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
         -> Bool {
-            return GIDSignIn.sharedInstance().handle(url,
+            
+            let twitter = TWTRTwitter.sharedInstance().application(application, open: url, options: options)
+
+            let google = GIDSignIn.sharedInstance().handle(url,
                                                      sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
                                                      annotation: [:])
+            
+            return twitter || google
     }
-    
+
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
         return GIDSignIn.sharedInstance().handle(url,
                                                  sourceApplication: sourceApplication,
                                                  annotation: annotation)
