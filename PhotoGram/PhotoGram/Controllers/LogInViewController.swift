@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import GoogleSignIn
 import Firebase
+import TwitterKit
 
 class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
@@ -23,6 +24,7 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     @IBOutlet weak var loginEmailField: UITextField!
     @IBOutlet weak var loginPasswordField: UITextField!
     @IBOutlet weak var signInButton: GIDSignInButton!
+    @IBOutlet weak var twitterButton: TWTRLogInButton!
     
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
@@ -31,6 +33,7 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -115,6 +118,28 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     }
 
     @IBAction func recoverPassword(_ sender: Any) {
+    }
+    
+    @IBAction func twitterButtonTapped(_ sender: Any) {
+        
+        TWTRLogInButton {(session, error) in
+
+            if let unwrappedSession = session {
+
+                let client = TWTRAPIClient()
+                client.loadUser(withID: unwrappedSession.userID, completion: { (user, error) in
+
+                    //Get the data of the client
+                })
+
+            } else {
+
+                if let localizedError = error?.localizedDescription {
+
+                    self.showAlertController(errorMessage: localizedError)
+                }
+            }
+        }
     }
     
     // MARK: - ShowAlerts

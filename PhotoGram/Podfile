@@ -8,5 +8,6 @@ target 'PhotoGram' do
     	pod 'Firebase/Auth'
 	pod 'lottie-ios'
 	pod 'GoogleSignIn'
+	pod 'TwitterKit'
 
 end
