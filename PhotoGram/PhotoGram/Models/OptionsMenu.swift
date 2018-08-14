@@ -1,5 +1,5 @@
 //
-//  LateralMenu.swift
+//  OptionsMenu.swift
 //  PhotoGram
 //
 //  Created by Enric Pou Villanueva on 14/8/18.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-internal struct LateralMenu {
+internal struct OptionsMenu {
     
-    var headerTitle: String
-    
+    var image: UIImage?
+    var title: String    
 }
